@@ -4,27 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>CapyFlix</title>
 </head>
 <body>
+    <header id="cabesa">
+        
+        <nav class="menu">
+            <div class="menu-item" onclick="toggleSubmenu()"><i class="bi-list"></i></div>
+            <div class="submenu" id="submenu">
+              <a href="#opcao1">Series</a>
+              <a href="#opcao2">Novidade</a>
+              <a href="#opcao3">Suporte</a>
+            </div>
+          </nav>
+    </header>
     <h1>Diário do FIM</h1>
+    <p class="elenco">Narrador - Amy Lee - <br>
+        Magnus -  Jão <br>
+        Will - Heitor<br>
+        Liz - Peruca a melhor <br>
+        Katherine - Beatriz <br>
+        </p>
     <div id="catalog">
         <div class="play">
-            <h2>Piloto</h2>
+            <h2 data-TP="1" data-EP="1">Piloto</h2>
             <!-- Substituindo a tag <audio> por <video> -->
-    <video id="videoElement" width="192" height="192" controls>
-        <source src="Assets/Video/seu-video.mp4" type="video/mp4">
-        <source src="Assets/Video/seu-video.ogv" type="video/ogg">
-        <source src="Assets/Video/seu-video.webm" type="video/webm">
-        Seu navegador não suporta a tag de vídeo.
-    </video>
-            <p>O mundo chegou ao fim, tudo completamente infectado - malditos sejam. Que nossas esperanças não morram tão cedo. Haverá um recomeço diante do fim?</p>
-            <button id="playButton">PLAY</button>
+            <video id="videoElement" width="192" height="192" controls>
+                <source src="Assets/Video/seu-video.mp4" type="video/mp4">
+                <source src="Assets/Video/seu-video.ogv" type="video/ogg">
+                <source src="Assets/Video/seu-video.webm" type="video/webm">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <i class="bi-info-circle-fill"></i>
+            <p id="sinopse_1">O mundo chegou ao fim, tudo completamente infectado - malditos sejam. Que nossas esperanças não morram tão cedo. Haverá um recomeço diante do fim?</p>
         </div>
     </div>
+    
 
     
 

@@ -1,28 +1,77 @@
-.inter-<uniquifier> {
+.inter-uniquifier {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
 }
-
+.elenco{
+    color: #b0b0b0;
+}
+h1, .elenco{
+    margin-left: 20px;
+}
 body {
-    margin: 20px;
-    background-color: #021342;
+    margin: 0px;
+    background-color: #000616;
     color: #fff;
     font-family: "Inter", sans-serif;
 }
-
+#cabesa{
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #262b2c;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    justify-self: center;
+    cursor: pointer;
+}
+.bi-list{
+    font-size: 32px;
+    justify-content: center;
+}
 #catalog {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    margin-left: 156px;
+    margin-right: 156px;
 }
-
+.play{
+    background-color: #606060;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+.play p{
+    display: none;
+}
+.bi-info-circle-fill{
+    position: relative;
+    left: 40px;
+    top: -50px;
+    font-size: 32px;
+}
+.play-active{
+    padding: 20px;
+    border-radius: 1em;
+    background-color: #002792;
+    box-shadow: 55px;
+    
+}
+.play-active p{
+    display: block;
+}
+.play-active i{
+    color: #002792;
+}
 button {
     height: 2em;
     width: 200px;
     transition: 0.3s;
-    border-color: ;
+    border-color: #fff;
 }
 
 button:hover {
@@ -33,3 +82,35 @@ button:hover {
     border-image-slice: 1;
   border-radius: 1em;
 }
+
+.menu {
+    display: flex;
+    background-color: #262b2c;
+    padding: 10px;
+  }
+  .menu-item {
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    text-decoration: underline;
+  }
+  .submenu {
+    display: none;
+    background-color: #3f4243;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    border-radius: 1em;
+  }
+  .submenu a {
+    color: white;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+  }
+  .submenu a:hover {
+    text-decoration: underline;
+  }

@@ -1,8 +1,14 @@
-    const playButton = document.getElementById('playButton');
-    const audioElement = document.getElementById('audioElement');
+document.querySelectorAll(".play").forEach(function (div) {
+  div.addEventListener("click", function () {
+    this.classList.toggle("play-active");
+  });
+});
 
-    playButton.addEventListener('click', () => {
-        // Toca o áudio
-        console.log("Funciona");
-        audioElement.play();
-    });
+function toggleSubmenu() {
+  const submenu = document.querySelector('#submenu');
+  if (submenu.style.display === 'block') {
+    submenu.style.display = 'none';
+  } else {
+    submenu.style.display = 'block';
+  }
+}
